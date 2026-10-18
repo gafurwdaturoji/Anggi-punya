@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Anggi 💗</title>
+
+<style>
+*{box-sizing:border-box}
+:root{
+ --pink:#ff72b6;
+ --gold:#ffe3a0;
+ --bg:#090514;
+}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ color:#fff4fb;
+ font-family:Georgia,'Times New Roman',serif;
+ background:
+ radial-gradient(ellipse at 50% 0%,#512052 0%,transparent 48%),
+ radial-gradient(ellipse at 0% 60%,#25103c 0%,transparent 45%),
+ var(--bg);
+ overflow-x:hidden;
+}
+#stars{
+ position:fixed;inset:0;width:100%;height:100%;
+ pointer-events:none;z-index:0
+}
+main{position:relative;z-index:1}
+section{
+ min-height:100vh;
+ padding:75px 20px;
+ display:flex;flex-direction:column;
+ align-items:center;justify-content:center;
+ text-align:center;
+}
+.eyebrow{
+ letter-spacing:5px;text-transform:uppercase;
+ font:10px Arial,sans-serif;color:var(--gold)
+}
+h1{
+ font-size:clamp(48px,13vw,100px);
+ margin:18px 0;
+ color:#ffc1e0;
+ text-shadow:0 0 10px #ff64ba,0 0 35px #ff238d;
+ animation:glow 3s infinite alternate;
+}
+@keyframes glow{
+ from{filter:brightness(.9)}
+ to{filter:brightness(1.35)}
+}
+.subtitle{
+ max-width:440px;line-height:1.9;
+ color:#e9cce1;font-size:16px
+}
+button{
+ border:1px solid #ffadd6;
+ background:linear-gradient(135deg,#ff65ad,#a32c8b);
+ color:white;padding:14px 23px;
+ border-radius:50px;cursor:pointer;
+ font-size:14px;letter-spacing:1px;
+ box-shadow:0 0 25px #ff55a755;
+ transition:.3s
+}
+button:active{transform:scale(.96)}
+button:hover{box-shadow:0 0 35px #ff55a7}
+.hero-buttons{
+ display:flex;gap:12px;flex-wrap:wrap;
+ justify-content:center;margin-top:28px
+}
+.orb{
+ width:210px;height:210px;
+ position:relative;display:grid;place-items:center;
+ margin:35px auto;
+ perspective:800px;
+}
+.heart{
+ font-size:135px;
+ filter:drop-shadow(0 0 20px #ff2d9a);
+ animation:heartbeat 1.8s infinite;
+ cursor:grab;user-select:none;
+}
+@keyframes heartbeat{
+ 0%,100%{transform:scale(1) rotateY(0)}
+ 50%{transform:scale(1.12) rotateY(18deg)}
+}
+.ring{
+ position:absolute;inset:5px;
+ border:1px solid #ffc1e088;border-radius:50%;
+ transform:rotateX(67deg);
+ animation:spin 7s linear infinite;
+}
+.ring:after{
+ content:'✦';position:absolute;top:-8px;left:50%;
+ color:var(--gold);font-size:18px
+}
+.ring.two{
+ inset:18px;transform:rotateY(68deg);
+ animation:spin2 9s linear infinite
+}
+@keyframes spin{to{transform:rotateX(67deg) rotateZ(360deg)}}
+@keyframes spin2{to{transform:rotateY(68deg) rotateZ(-360deg)}}
+.divider{
+ width:100px;height:1px;margin:26px auto;
+ background:linear-gradient(90deg,transparent,var(--gold),transparent)
+}
+.card{
+ width:min(100%,650px);
+ padding:30px 24px;
+ border:1px solid #ffc1e02b;
+ border-radius:24px;
+ background:linear-gradient(145deg,#ffffff0d,#ff76c40a);
+ backdrop-filter:blur(10px);
+ box-shadow:0 20px 70px #0005;
+ text-align:left;line-height:2;
+ color:#f3ddec;
+}
+.card h2{text-align:center;color:#ffc2df;font-weight:normal}
+.card p{margin:18px 0}
+.rose{
+ position:fixed;top:-40px;z-index:2;
+ pointer-events:none;
+ animation:fall linear forwards;
+ filter:drop-shadow(0 0 7px #ff74ad66)
+}
+@keyframes fall{
+ to{transform:translate3d(var(--drift),110vh,0) rotate(650deg);opacity:.1}
+}
+.small{font-size:12px;color:#c7a4c4;line-height:2}
+footer{padding:35px 15px;text-align:center;color:#d5a9cb;font-size:12px}
+.reveal{opacity:0;transform:translateY(25px);transition:opacity 1s,transform 1s}
+.reveal.show{opacity:1;transform:translateY(0)}
+#musicNote{font-size:12px;color:#e9b6d6;margin-top:12px}
+</style>
+</head>
+
+<body>
+<canvas id="stars"></canvas>
+<main>
+
+<section id="home">
+ <div class="eyebrow">✦ Sebuah cerita dari hati ✦</div>
+ <h1>Anggi</h1>
+ <div class="orb" id="orb">
+  <div class="ring"></div>
+  <div class="ring two"></div>
+  <div class="heart" id="heart">💗</div>
+ </div>
+ <p class="subtitle">
+  Ada satu nama yang sederhana untuk diucapkan,
+  tetapi entah mengapa terasa begitu istimewa ketika
+  diam-diam tinggal di dalam pikiran.
+ </p>
+ <div class="hero-buttons">
+  <button onclick="document.querySelector('#surat').scrollIntoView()">Buka isi hatiku 💌</button>
+  <button onclick="toggleFlowers()">Taburkan bunga 🌹</button>
+ </div>
+ <p class="small">Geser layar ke bawah untuk melanjutkan cerita ♡</p>
+</section>
+
+<section id="surat">
+ <div class="eyebrow">01 — Untuk seseorang</div>
+ <h2 style="font-size:35px;color:#ffc1df;font-weight:normal">Sebuah Surat Untuk Anggi</h2>
+ <div class="divider"></div>
+ <article class="card reveal">
+  <h2>Untuk Anggi, dari hati yang ingin bercerita 💗</h2>
+
+  <p>Hai, Anggi.</p>
+
+  <p>Aku sebenarnya tidak tahu harus memulai cerita ini dari mana.
+  Ada begitu banyak hal yang ingin aku sampaikan, tetapi saat semuanya
+  sudah tersusun di dalam pikiran, kata-katanya justru terasa sulit
+  untuk keluar. Jadi, kali ini biarkan aku mencoba menuliskannya
+  perlahan-lahan.</p>
+
+  <p>Anggi, pernah nggak kamu menyadari bahwa ada seseorang yang bisa
+  membuat hari biasa terasa sedikit berbeda? Seseorang yang namanya
+  kadang muncul begitu saja di pikiran, bahkan ketika tidak sedang
+  membicarakannya dengan siapa pun?</p>
+
+  <p>Aku tidak tahu apakah kamu pernah merasakan hal seperti itu.
+  Namun, terkadang hal sederhana memang bisa meninggalkan kesan yang
+  tidak sederhana. Sebuah percakapan singkat, sapaan kecil, atau
+  sekadar mengetahui kabarmu bisa menjadi bagian menyenangkan dari
+  hari seseorang.</p>
+
+  <p>Aku membuat halaman ini bukan karena aku pandai merangkai kata.
+  Justru sebaliknya, ada perasaan yang tidak selalu mudah dijelaskan.
+  Aku hanya ingin menyampaikan bahwa seseorang sepertimu pantas
+  mendapatkan hal-hal baik, ketulusan, dan kebahagiaan yang tidak
+  dibuat-buat.</p>
+
+  <p>Kalau suatu hari kamu sedang lelah, semoga kamu menemukan alasan
+  kecil untuk tersenyum. Kalau harimu terasa berat, semoga ada hal
+  sederhana yang mengingatkanmu bahwa hari buruk tidak berlangsung
+  selamanya. Dan kalau kamu sedang bahagia, semoga kebahagiaan itu
+  bertahan lebih lama daripada yang kamu bayangkan.</p>
+
+  <p>Aku tidak ingin membuat janji besar yang terdengar indah tetapi
+  sulit dibuktikan. Aku lebih percaya pada ketulusan yang terlihat
+  dari hal-hal kecil: menghargai, mendengarkan, berkata jujur, dan
+  tidak menganggap remeh perasaan orang lain.</p>
+
+  <p>Anggi, mungkin halaman ini hanya kumpulan warna, bunga, cahaya,
+  dan animasi. Namun, di balik semua itu ada niat sederhana:
+  menyampaikan sesuatu yang mungkin lebih mudah ditulis daripada
+  diucapkan secara langsung.</p>
+
+  <p>Aku tidak tahu bagaimana kamu akan membaca semua ini. Mungkin
+  kamu tersenyum, mungkin kamu merasa malu, atau mungkin kamu hanya
+  menganggapnya sebagai sebuah cerita kecil. Apa pun itu, tidak apa-apa.
+  Kamu tidak harus memberikan jawaban tertentu hanya karena seseorang
+  menyampaikan perasaannya.</p>
+
+  <p>Bagiku, perasaan yang tulus seharusnya tidak menjadi beban.
+  Perasaan itu boleh disampaikan dengan jujur, tetapi juga harus
+  memberi ruang bagi seseorang untuk menjadi dirinya sendiri.</p>
+
+  <p>Jadi, jika ada satu hal yang ingin aku sampaikan lewat halaman ini,
+  hal itu adalah: terima kasih sudah menjadi Anggi, dengan segala
+  keunikan dan ceritamu sendiri. Semoga kamu selalu dikelilingi
+  kebaikan, orang-orang yang menghargaimu, dan alasan untuk terus
+  tersenyum.</p>
+
+  <p>Dan jika suatu saat kamu bertanya-tanya mengapa seseorang
+  membuat halaman penuh bunga dan hati dengan namamu di tengahnya,
+  jawabannya mungkin sesederhana ini: ada sesuatu tentang dirimu
+  yang ingin ia kenang dengan cara yang istimewa.</p>
+
+  <p style="text-align:center;color:#ffc1df">
+   Untuk Anggi, seseorang yang namanya menghiasi cerita kecil ini. 🌹
+  </p>
+
+  <p style="text-align:right">— Dari seseorang yang ingin menyampaikan isi hatinya ♡</p>
+ </article>
+</section>
+
+<section id="bunga">
+ <div class="eyebrow">02 — Taman kecil kita</div>
+ <h2 style="font-size:38px;color:#ffc1df;font-weight:normal">A Garden of Little Wishes</h2>
+ <div class="orb">
+  <div class="ring"></div><div class="ring two"></div>
+  <div class="heart" id="gardenHeart">💖</div>
+ </div>
+ <p class="subtitle reveal">
+  Semoga hari-harimu dipenuhi hal-hal yang membuatmu bahagia.
+  Semoga langkahmu selalu menemukan harapan, dan semoga kamu
+  tidak pernah lupa betapa berharganya dirimu sebagai manusia.
+ </p>
+ <div class="hero-buttons">
+  <button onclick="changeHeart()">Ganti bentuk hati 💞</button>
+  <button onclick="toggleFlowers()">Bunga lebih banyak 🌸</button>
+ </div>
+</section>
+
+<section id="akhir">
+ <div class="eyebrow">03 — Sebelum cerita berakhir</div>
+ <h2 style="font-size:clamp(34px,8vw,58px);color:#ffc1df;font-weight:normal">
+  Untukmu, Anggi
+ </h2>
+ <div class="divider"></div>
+ <p class="subtitle reveal">
+  Tidak semua perasaan membutuhkan kalimat yang sempurna.
+  Terkadang, keberanian untuk mengungkapkannya dengan jujur
+  sudah menjadi sesuatu yang sangat berarti.
+ </p>
+ <div style="font-size:50px;margin:20px">🌹💗🌷</div>
+ <button onclick="showMessage()">Ada satu hal lagi... 💌</button>
+ <p id="lastMessage" class="subtitle" style="display:none;margin-top:25px">
+  Anggi, semoga kamu selalu bahagia. Terima kasih sudah menjadi
+  bagian dari cerita yang ingin kusampaikan hari ini. ♡
+ </p>
+</section>
+
+<footer>
+ Dibuat dengan sepenuh hati untuk Anggi 💗<br><br>
+ ✦ Semoga hal baik selalu menemukan jalannya kepadamu ✦
+</footer>
+</main>
+
+<script>
+// Bintang berkelip di langit
+const canvas=document.getElementById('stars');
+const ctx=canvas.getContext('2d');
+let stars=[];
+function resize(){
+ canvas.width=innerWidth*devicePixelRatio;
+ canvas.height=innerHeight*devicePixelRatio;
+ canvas.style.width=innerWidth+'px';
+ canvas.style.height=innerHeight+'px';
+ ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+ stars=Array.from({length:Math.min(140,Math.floor(innerWidth/4))},()=>({
+  x:Math.random()*innerWidth,y:Math.random()*innerHeight,
+  r:Math.random()*1.6+.3,a:Math.random(),s:Math.random()*.018+.004
+ }));
+}
+function draw(){
+ ctx.clearRect(0,0,innerWidth,innerHeight);
+ for(const s of stars){
+  s.a+=s.s;
+  const alpha=.25+Math.abs(Math.sin(s.a))*.75;
+  ctx.beginPath();
+  ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+  ctx.fillStyle=`rgba(255,220,245,${alpha})`;
+  ctx.fill();
+ }
+ requestAnimationFrame(draw);
+}
+addEventListener('resize',resize);resize();draw();
+
+// Bunga jatuh
+let flowerTimer=null;
+function flower(){
+ const el=document.createElement('div');
+ el.className='rose';
+ el.textContent=['🌸','🌹','🌷','💮','💕','✨'][Math.floor(Math.random()*6)];
+ el.style.left=Math.random()*100+'vw';
+ el.style.fontSize=(15+Math.random()*19)+'px';
+ el.style.animationDuration=(5+Math.random()*7)+'s';
+ el.style.setProperty('--drift',(Math.random()*160-80)+'px');
+ document.body.appendChild(el);
+ setTimeout(()=>el.remove(),13000);
+}
+function toggleFlowers(){
+ for(let i=0;i<28;i++)setTimeout(flower,i*100);
+}
+flowerTimer=setInterval(flower,850);
+
+// Hati bisa digerakkan dengan sentuhan atau mouse
+const heart=document.getElementById('heart');
+let dragging=false,lastX=0,rotation=0;
+heart.addEventListener('pointerdown',e=>{
+ dragging=true;lastX=e.clientX;heart.setPointerCapture(e.pointerId);
+});
+heart.addEventListener('pointermove',e=>{
+ if(!dragging)return;
+ rotation+=(e.clientX-lastX)*1.4;
+ lastX=e.clientX;
+ heart.style.animation='none';
+ heart.style.transform=`rotateY(${rotation}deg) scale(1.08)`;
+});
+heart.addEventListener('pointerup',()=>dragging=false);
+heart.addEventListener('pointercancel',()=>dragging=false);
+
+// Efek kemunculan saat halaman digulir
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{
+  if(e.isIntersecting)e.target.classList.add('show');
+ });
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+// Variasi hati
+const hearts=['💖','💗','💓','💞','💕','💘'];
+let hi=0;
+function changeHeart(){
+ hi=(hi+1)%hearts.length;
+ document.getElementById('gardenHeart').textContent=hearts[hi];
+ toggleFlowers();
+}
+function showMessage(){
+ const el=document.getElementById('lastMessage');
+ el.style.display='block';
+ el.scrollIntoView({behavior:'smooth',block:'center'});
+ toggleFlowers();
+}
+</script>
+</body>
+</html>
